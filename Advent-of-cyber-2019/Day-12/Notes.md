@@ -19,7 +19,7 @@ gpg -c <filename>
 gpg -d <filename>
 ```
 
-![Pasted image 20210810140841.png]
+![[Pasted image 20210810140841.png]]
 
 ------
 
