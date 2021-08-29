@@ -10,7 +10,7 @@ with zipfile.ZipFile('final-final-compressed.zip','r') as zip_ref:
 
 --> after that i got many zip files in the extracted folder 
 
-![[Pasted image 20210812132950.png]]
+![Pasted image 20210812132950.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-16/Attachments/Pasted%20image%2020210812132950.png)
 
 --> so we have to unzip these files also 
 
@@ -63,7 +63,7 @@ for d in metadata:
 
 --> and i got metadata for every file and then i found `3` files which contains the word `version 1.1`
 
-![[Pasted image 20210812130834.png]]
+![Pasted image 20210812130834.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-16/Attachments/Pasted%20image%2020210812130834.png)
 
 -----
 
@@ -77,7 +77,7 @@ grep -r "password"
 
 --> and i found the password !
 
-![[Pasted image 20210812134042.png]]
+![Pasted image 20210812134042.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-16/Attachments/Pasted%20image%2020210812134042.png)
 
 --> i also made one script for this but it didn't work i don't know why :(
 
