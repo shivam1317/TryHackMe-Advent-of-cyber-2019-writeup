@@ -6,11 +6,11 @@
 
 --> let's search for main function using `afl | grep main` and we got the main function 
 
-![[Pasted image 20210814114547.png]]
+![Pasted image 20210814114547.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-22/attachments/Pasted%20image%2020210814114547.png)
 
 --> let's read the main function using `pdf@main` 
 
-![[Pasted image 20210814114741.png]]
+![Pasted image 20210814114741.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-22/attachments/Pasted%20image%2020210814114741.png)
 
 --> we can see it's using `jle` which means less than or equal to so it means if the value of `eax` will less than or equal to `var_4h` then it will jump otherwise it will goto next instruction 
 
@@ -23,21 +23,21 @@ db 0x00400b6b
 
 --> let's check using `pdf@main`
 
-![[Pasted image 20210814115012.png]]
+![Pasted image 20210814115012.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-22/attachments/Pasted%20image%2020210814115012.png)
 
 --> ok so we are good to go so let's execute the program using `dc` and it will hit the breakpoint
 
-![[Pasted image 20210814115129.png]]
+![Pasted image 20210814115129.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-22/attachments/Pasted%20image%2020210814115129.png)
 
 --> so let's analyse the value of `var_4h` and `eax` register because eax register contains the value of `var_8h`
 
 --> we can see the value of `var_4h` using `px@rbp-0x4`
 
-![[Pasted image 20210814115252.png]]
+![Pasted image 20210814115252.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-22/attachments/Pasted%20image%2020210814115252.png)
 
 --> and currently it's 2 so let's see the value of registers also
 
-![[Pasted image 20210814115335.png]]
+![Pasted image 20210814115335.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-22/attachments/Pasted%20image%2020210814115335.png)
 
 --> the value of `eax` is 8 
 
@@ -45,23 +45,23 @@ db 0x00400b6b
 
 --> so now let's goto next instruction using `ds` and analyse the values 
 
-![[Pasted image 20210814115435.png]]
+![Pasted image 20210814115435.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-22/attachments/Pasted%20image%2020210814115435.png)
 
 --> it will add `1` into `var_8h` so the value of `var_8h` should be 9
 
 --> current value is `8`
 
-![[Pasted image 20210814115532.png]]
+![Pasted image 20210814115532.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-22/attachments/Pasted%20image%2020210814115532.png)
 
 --> after doing `ds` value is chaned to `9`
 
-![[Pasted image 20210814115608.png]]
+![Pasted image 20210814115608.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-22/attachments/Pasted%20image%2020210814115608.png)
 
 --> so we can see the final value of `var_8h` is `9`
 
 --> let's see the value of `var_4h`
 
-![[Pasted image 20210814115655.png]]
+![Pasted image 20210814115655.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-22/attachments/Pasted%20image%2020210814115655.png)
 
 --> and the value is `2`
 
