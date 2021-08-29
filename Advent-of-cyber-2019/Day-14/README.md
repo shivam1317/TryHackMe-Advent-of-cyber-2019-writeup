@@ -15,7 +15,7 @@
 
 --> after going to this URL i found this 
 
-![[Pasted image 20210811135611.png]]
+![Pasted image 20210811135611.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-14/Attachments/Pasted%20image%2020210811135611.png)
 
 --> so to read this file we just need to go to :
 
@@ -25,4 +25,4 @@
 
 --> and you can see the contents of the file 
 
-![[Pasted image 20210811135719.png]]
+![Pasted image 20210811135719.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-14/Attachments/Pasted%20image%2020210811135719.png)
