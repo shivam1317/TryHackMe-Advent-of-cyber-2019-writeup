@@ -1,6 +1,6 @@
 --> i got  this on port `3000` 
 
-![[Pasted image 20210829035241.png]]
+![Pasted image 20210829035241.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-2/Attachments/Pasted%20image%2020210829035241.png)
 
 --> let's use `dirsearch` to brute force the directories 
 
@@ -27,23 +27,23 @@
 
 --> and we got admin login page 
 
-![[Pasted image 20210829035631.png]]
+![Pasted image 20210829035631.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-2/Attachments/Pasted%20image%2020210829035631.png)
 
 --> but we don't have username and password 
 
 --> So i checked source code and i found this comment !
 
-![[Pasted image 20210829035855.png]]
+![Pasted image 20210829035855.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-2/Attachments/Pasted%20image%2020210829035855.png)
 
 --> So let's check their github repo 
 
-![[Pasted image 20210829035935.png]]
+![Pasted image 20210829035935.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-2/Attachments/Pasted%20image%2020210829035935.png)
 
 --> and now we have credentials : `admin:defaultpass`
 
 ### Q.3 What do you have to take to the 'partay'
 
-![[Pasted image 20210829040208.png]]
+![Pasted image 20210829040208.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-2/Attachments/Pasted%20image%2020210829040208.png)
 
 ==> Ans : eggnog 
 
