@@ -10,7 +10,7 @@ Ans : 65534
 
 --> i found the .bash_history file in holly's home directory 
 
-![[Pasted image 20210723140447.png]]
+![Pasted image 20210723140447.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-8/Attachments/Pasted%20image%2020210723140447.png)
 
 --> so i did the same and get the flag 
 
@@ -31,11 +31,11 @@ find test -exec cat /home/igor/flag1.txt \
 
 --> and i found some files but i found system-control file useful !
 
-![[Pasted image 20210723143125.png]]
+![Pasted image 20210723143125.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-8/Attachments/Pasted%20image%2020210723143125.png)
 
 --> so i run that file and got the root flag !
 
-![[Pasted image 20210723143237.png]]
+![Pasted image 20210723143237.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-8/Attachments/Pasted%20image%2020210723143237.png)
 
 -----
 
