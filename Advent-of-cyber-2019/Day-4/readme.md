@@ -12,7 +12,7 @@ Ans : recipes
 
 #3.Which file contains the string ‘password’?
 
-command : grep password *
+command : `grep password *`
 
 Ans : file6
 
@@ -20,7 +20,7 @@ Ans : file6
 
 #4.What is the IP address in a file in the home folder?
 
-command : egrep -o "[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" *
+command : `egrep -o "[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" *`
 
 Ans : 10.0.0.05
 
@@ -28,7 +28,7 @@ Ans : 10.0.0.05
 
 #5.How many users can log into the machine?
 
-command : cat /etc/passwd | grep "/bin/bash" | wc -l
+command : `cat /etc/passwd | grep "/bin/bash" | wc -l`
 
 Ans : 3
 
@@ -36,7 +36,7 @@ Ans : 3
 
 #6.What is the sha1 hash of file8?
 
-command : sha1sum file8
+command : `sha1sum file8`
 
 Ans : fa67ee594358d83becdd2cb6c466b25320fd2835
 
