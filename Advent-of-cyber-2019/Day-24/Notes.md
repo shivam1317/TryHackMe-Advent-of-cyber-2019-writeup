@@ -4,7 +4,8 @@
 
 ## nmap results 
 
->[sudo] password for kali: 
+```c
+[sudo] password for kali: 
 Starting Nmap 7.91 ( https://nmap.org ) at 2021-08-15 03:06 EDT
 Nmap scan report for 10.10.94.124 (10.10.94.124)
 Host is up (0.26s latency).
@@ -29,6 +30,7 @@ PORT     STATE SERVICE VERSION
 | http-methods: 
 |_  Potentially risky methods: DELETE
 |_http-title: Site doesn't have a title (application/json; charset=UTF-8).
+```
 
 ------
 
@@ -36,13 +38,13 @@ PORT     STATE SERVICE VERSION
 
 --> and i found this logs file 
 
-![[Pasted image 20210815035155.png]]
+![Pasted image 20210815035155.png](https://github.com/shivam1317/TryHackMe-Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-24/attachments/Pasted%20image%2020210815035155.png)
 
 --> i don't know what it is so let's goto next port which is `9200` for elasticsearch database 
 
 --> we have hint 
 
-![[Pasted image 20210815035305.png]]
+![Pasted image 20210815035305.png](https://github.com/shivam1317/TryHackMe-Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-24/attachments/Pasted%20image%2020210815035305.png)
 
 --> so i googled it and found the curl command to search for `password` string 
 
@@ -52,7 +54,7 @@ curl -X GET "<ip>:9200_search?q=password&pretty"
 
 --> ans we got the password !
 
-![[Pasted image 20210815035459.png]]
+![Pasted image 20210815035459.png](https://github.com/shivam1317/TryHackMe-Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-24/attachments/Pasted%20image%2020210815035459.png)
 
 ```
 hey, can you access my dev account for me. My username is l33tperson and my password is 9Qs58Ol3AXkMWLxiEyUyyf
@@ -64,13 +66,13 @@ hey, can you access my dev account for me. My username is l33tperson and my pass
 
 --> now we have to read the `root.txt` file so there is mentioned `kibana` in question 
 
-![[Pasted image 20210815035602.png]]
+![Pasted image 20210815035602.png](https://github.com/shivam1317/TryHackMe-Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-24/attachments/Pasted%20image%2020210815035602.png)
 
 --> so i searched for default port of kibana and i found port `5601`
 
 --> let's run nmap for this port 
 
-![[Pasted image 20210815035925.png]]
+![Pasted image 20210815035925.png](https://github.com/shivam1317/TryHackMe-Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-24/attachments/Pasted%20image%2020210815035925.png)
 
 --> and we can see `5601` port is open and it's running `kabana` 
 
@@ -78,7 +80,7 @@ hey, can you access my dev account for me. My username is l33tperson and my pass
 
 --> and we got this beutiful interface 
 
-![[Pasted image 20210815040047.png]]
+![Pasted image 20210815040047.png](https://github.com/shivam1317/TryHackMe-Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-24/attachments/Pasted%20image%2020210815040047.png)
 
 ----
 
@@ -88,7 +90,7 @@ hey, can you access my dev account for me. My username is l33tperson and my pass
 
 --> after that i search on google for `kibana 6.4.2 exploit-db` and found LFI exploit 
 
-![[Pasted image 20210815040533.png]]
+![Pasted image 20210815040533.png](https://github.com/shivam1317/TryHackMe-Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-24/attachments/Pasted%20image%2020210815040533.png)
 
 --> payload : 
 
@@ -100,7 +102,7 @@ hey, can you access my dev account for me. My username is l33tperson and my pass
 
 --> nothing happened on webpage but we have the log files so let's download that and search for `root.txt`
 
-![[Pasted image 20210815040801.png]]
+![Pasted image 20210815040801.png](https://github.com/shivam1317/TryHackMe-Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-24/attachments/Pasted%20image%2020210815040801.png)
 
 --> and i found one error message in  the logs 
 
