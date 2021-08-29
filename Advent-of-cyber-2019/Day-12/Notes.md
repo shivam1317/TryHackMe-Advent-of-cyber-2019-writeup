@@ -62,17 +62,17 @@ Now, if we use our private key, we can decrypt the file and get the original mes
  
  --> we have 3 files so we have to decrypt them so Let's start with note1
  
- ![[Pasted image 20210810142115.png]]
+ ![Pasted image 20210810142115.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-12/Attachments/Pasted%20image%2020210810142115.png)
  
  --> i got the passphrase for note1 in hint which was  **25daysofchristmas**
  
- ![[Pasted image 20210810141642.png]]
+ ![Pasted image 20210810141642.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-12/Attachments/Pasted%20image%2020210810141642.png)
  
  --> so Let's decrypt second file using private.key 
  
  --> i also got the passphrase for private key in hint which was **hello**
  
- ![[Pasted image 20210810142009.png]]
+ ![Pasted image 20210810142009.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-12/Attachments/Pasted%20image%2020210810142009.png)
  
  --> and we got the flag !
  
