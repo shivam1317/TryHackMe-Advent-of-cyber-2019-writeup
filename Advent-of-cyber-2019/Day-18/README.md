@@ -4,13 +4,13 @@
 
 --> we got this page on the 3000 port 
 
-![[Pasted image 20210813112804.png]]
+![Pasted image 20210813112804.png](https://github.com/shivam1317/TryHackMe-Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-18/Pasted%20image%2020210813112804.png)
 
 --> so Let's register and login 
 
 --> after login we can see some chats and one imput field 
 
-![[Pasted image 20210813112858.png]]
+![Pasted image 20210813112858.png](https://github.com/shivam1317/TryHackMe-Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-18/Pasted%20image%2020210813112858.png)
 
 --> so i got the payload in the supporting material so i changed it a bit and made my payload 
 
@@ -28,4 +28,4 @@ sudo nc -lvnp 4444
 
 --> and after some time we got the admin's session id
 
-![[Pasted image 20210813113230.png]]
+![Pasted image 20210813113230.png](https://github.com/shivam1317/TryHackMe-Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-18/Pasted%20image%2020210813113230.png)
