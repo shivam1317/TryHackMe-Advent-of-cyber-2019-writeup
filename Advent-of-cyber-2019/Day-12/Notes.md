@@ -19,7 +19,7 @@ gpg -c <filename>
 gpg -d <filename>
 ```
 
-![[Pasted image 20210810140841.png]]
+![Pasted image 20210810140841.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-12/Attachments/Pasted%20image%2020210810140841.png)
 
 ------
 
