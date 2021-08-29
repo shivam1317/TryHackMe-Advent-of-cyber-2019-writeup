@@ -1,6 +1,7 @@
 ## nmap results 
 
->PORT     STATE SERVICE VERSION
+```c
+PORT     STATE SERVICE VERSION
 21/tcp   open  ftp     vsftpd 3.0.2
 | ftp-anon: Anonymous FTP login allowed (FTP code 230)
 |_Can't get directory listing: PASV failed: 500 OOPS: invalid pasv_address
@@ -65,6 +66,7 @@
 |_Not valid after:  2029-12-07T23:10:36
 |_ssl-date: TLS randomness does not represent time
 Service Info: OS: Unix`
+```
 
 -------
 
@@ -90,7 +92,7 @@ showmount -e <ip>
 
 --> and i found one directory 
 
-![[Pasted image 20210810133504.png]]
+![Pasted image 20210810133504.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-11/Attachments/Pasted%20image%2020210810133504.png)
 
 --> so Let's mount it into our local machine using command 
 
@@ -119,7 +121,7 @@ mysql -h <ip> -u <username> -p
 
 --> after accessing database i got the password !
 
-![[Pasted image 20210810135007.png]]
+![Pasted image 20210810135007.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-11/Attachments/Pasted%20image%2020210810135007.png)
 
 
 -------
