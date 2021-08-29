@@ -1,6 +1,7 @@
 ## Q. 1 how many TCP ports under 1000 are open?
 
-> PORT    STATE SERVICE VERSION
+```c
+PORT    STATE SERVICE VERSION
 22/tcp  open  ssh     OpenSSH 7.4 (protocol 2.0)
 | ssh-hostkey: 
 |   2048 18:81:a7:cb:09:1e:27:4f:91:b5:3a:c2:4a:dc:d7:c5 (RSA)
@@ -20,7 +21,7 @@
 999/tcp open  http    SimpleHTTPServer 0.6 (Python 3.6.8)
 |_http-server-header: SimpleHTTP/0.6 Python/3.6.8
 |_http-title: Directory listing for /
-
+```
 
 Ans : 3
 
@@ -40,7 +41,7 @@ Ans : 7.4 (from nmap scan)
 
 ## Q.4 What is the name of the file that is accessible on the server you found running?
 
-![[Pasted image 20210723132852.png]]
+![Pasted image 20210723132852.png](https://github.com/shivam1317/Advent-of-cyber-2019-writeup/blob/main/Advent-of-cyber-2019/Day-7/Attachments/Pasted%20image%2020210723132852.png)
 
 Ans : interesting.file
 
